@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyYHMListController">
+            <connections>
+                <outlet property="btnChoose" destination="31L-lF-7x2" id="it3-NE-aqt"/>
+                <outlet property="btnLeft" destination="afd-ow-caI" id="Gwj-dg-0i2"/>
+                <outlet property="btnRefresh" destination="5G3-Hd-cvQ" id="BjU-0t-vfR"/>
+                <outlet property="btnRight" destination="TfW-Bf-6eN" id="DvP-wz-Cq4"/>
+                <outlet property="helpBtn" destination="TeG-dm-jAR" id="VUA-z3-w2O"/>
+                <outlet property="hoverView" destination="6OL-2W-WKi" id="R32-7K-GUd"/>
+                <outlet property="imgIcon" destination="OI7-pZ-3LP" id="u61-19-Znv"/>
+                <outlet property="lblDj" destination="YGe-6d-eE1" id="k6X-jE-BIM"/>
+                <outlet property="lblSilver" destination="MaW-U9-9Fr" id="EVA-42-HF2"/>
+                <outlet property="lblTIshi" destination="n3o-57-Kfy" id="9ov-HT-myr"/>
+                <outlet property="lblTime" destination="Wnt-oa-hkh" id="f21-Fj-Ima"/>
+                <outlet property="line" destination="ykv-Xy-XQJ" id="C27-Xy-Khx"/>
+                <outlet property="orderNumField" destination="To1-Ak-z06" id="pTP-pQ-zYb"/>
+                <outlet property="phoneNumField" destination="oYh-za-zGe" id="yFc-2g-BJn"/>
+                <outlet property="shooseView" destination="0ta-vV-Z85" id="B1O-vN-Owq"/>
+                <outlet property="tableView" destination="hfO-hu-2qy" id="vXw-ZY-yaf"/>
+                <outlet property="topImg" destination="mU5-k1-14R" id="ZhB-UX-GcT"/>
+                <outlet property="topView" destination="jgf-kP-7be" id="ZO6-I2-g5u"/>
+                <outlet property="view" destination="FE3-UV-EQj" id="KMm-VC-SYp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="FE3-UV-EQj">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hfO-hu-2qy">
+                    <rect key="frame" x="0.0" y="112" width="320" height="368"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="4xC-As-aYk"/>
+                        <outlet property="delegate" destination="-1" id="baC-1A-Pzw"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" id="jgf-kP-7be">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="silver_bg.png" id="mU5-k1-14R">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.png" id="ykv-Xy-XQJ" customClass="RRLineView">
+                            <rect key="frame" x="0.0" y="111" width="320" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="afd-ow-caI">
+                            <rect key="frame" x="35" y="10" width="47" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="silver_date_leftnormal.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="disabled" image="silver_date_leftdisable.png"/>
+                            <state key="highlighted" image="silver_date_lefthilighted.png"/>
+                            <connections>
+                                <action selector="leftClicked:" destination="-1" eventType="touchUpInside" id="kQR-uM-deu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TfW-Bf-6eN">
+                            <rect key="frame" x="238" y="10" width="47" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="silver_date_rightnormal.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="disabled" image="silver_date_rightdisable.png"/>
+                            <state key="highlighted" image="silver_date_righthilighted.png"/>
+                            <connections>
+                                <action selector="rightClicked:" destination="-1" eventType="touchUpInside" id="5dI-Qw-QPy"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2014年11月" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wnt-oa-hkh">
+                            <rect key="frame" x="82" y="24" width="156" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当月消耗  0.00 易货码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MaW-U9-9Fr">
+                            <rect key="frame" x="14" y="66" width="266" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="包含冻结易货码 0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YGe-6d-eE1">
+                            <rect key="frame" x="14" y="87" width="271" height="14"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TeG-dm-jAR">
+                            <rect key="frame" x="273" y="55" width="43" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="silver_help.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="silver_helphover.png"/>
+                            <connections>
+                                <action selector="helpClicked:" destination="-1" eventType="touchUpInside" id="s1c-SN-YmO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="6OL-2W-WKi">
+                    <rect key="frame" x="0.0" y="112" width="320" height="368"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="hold_1.png" id="OI7-pZ-3LP">
+                            <rect key="frame" x="119" y="55" width="75" height="75"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5G3-Hd-cvQ" customClass="RRButton">
+                            <rect key="frame" x="113" y="184" width="95" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="重新筛选">
+                                <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="BtnHoverbg.png"/>
+                            <connections>
+                                <action selector="reChooseClicked:" destination="-1" eventType="touchUpInside" id="0jX-Ch-Cex"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无兑换获得的易货码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n3o-57-Kfy">
+                            <rect key="frame" x="38" y="155" width="237" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="31L-lF-7x2">
+                    <rect key="frame" x="260" y="420" width="45" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="saixuan.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="saixuan_hover.png"/>
+                    <connections>
+                        <action selector="chooseClicked:" destination="-1" eventType="touchUpInside" id="4vK-8O-dIY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="323" y="269"/>
+        </view>
+        <view contentMode="scaleToFill" id="0ta-vV-Z85">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="193"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单编号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KKA-jC-ymm">
+                    <rect key="frame" x="15" y="21" width="80" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入订单编号" minimumFontSize="17" id="To1-Ak-z06" customClass="CommonTextField">
+                    <rect key="frame" x="15" y="43" width="290" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账户名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TqJ-Bc-rpY">
+                    <rect key="frame" x="15" y="100" width="80" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入用户的手机号码" minimumFontSize="17" id="oYh-za-zGe" customClass="CommonTextField">
+                    <rect key="frame" x="15" y="122" width="290" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-106" y="346.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BtnHoverbg.png" width="320" height="60"/>
+        <image name="hold_1.png" width="100" height="69"/>
+        <image name="line.png" width="1" height="1"/>
+        <image name="saixuan.png" width="44" height="44"/>
+        <image name="saixuan_hover.png" width="44" height="44"/>
+        <image name="silver_bg.png" width="320" height="97"/>
+        <image name="silver_date_leftdisable.png" width="21" height="21"/>
+        <image name="silver_date_lefthilighted.png" width="21" height="21"/>
+        <image name="silver_date_leftnormal.png" width="21" height="21"/>
+        <image name="silver_date_rightdisable.png" width="21" height="21"/>
+        <image name="silver_date_righthilighted.png" width="21" height="21"/>
+        <image name="silver_date_rightnormal.png" width="21" height="21"/>
+        <image name="silver_help.png" width="20" height="20"/>
+        <image name="silver_helphover.png" width="20" height="20"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

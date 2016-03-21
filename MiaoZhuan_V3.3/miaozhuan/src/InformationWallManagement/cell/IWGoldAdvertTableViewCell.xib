@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="IWGoldAdvertTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vgp-fv-0e0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NoJ-Mh-xey" customClass="RTLabel">
+                                <rect key="frame" x="15" y="15" width="450" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="ifZ-1I-EhD"/>
+                                    <constraint firstAttribute="width" constant="450" id="yR6-Uk-b65"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJ6-jL-VRh" customClass="RTLabel">
+                                <rect key="frame" x="15" y="45" width="450" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="450" id="Npm-ys-At6"/>
+                                    <constraint firstAttribute="height" constant="20" id="us1-IM-TGK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6n-Rl-25k" customClass="RTLabel">
+                                <rect key="frame" x="15" y="75" width="450" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="f2H-ve-1aE"/>
+                                    <constraint firstAttribute="width" constant="450" id="pQm-9G-0Aa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6mh-H5-Jrh" customClass="RTLabel">
+                                <rect key="frame" x="15" y="105" width="450" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="3CT-pS-sp3"/>
+                                    <constraint firstAttribute="width" constant="450" id="Eqc-zc-4cH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rpe-Xp-rB8" customClass="RTLabel">
+                                <rect key="frame" x="520" y="60" width="65" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="BQT-v7-qPH"/>
+                                    <constraint firstAttribute="height" constant="20" id="Zd6-X5-gfy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NoJ-Mh-xey" firstAttribute="leading" secondItem="Vgp-fv-0e0" secondAttribute="leading" constant="15" id="5uU-hD-YYX"/>
+                            <constraint firstAttribute="height" constant="140" id="7pC-ez-WJ7"/>
+                            <constraint firstAttribute="bottom" secondItem="6mh-H5-Jrh" secondAttribute="bottom" constant="15" id="Dre-4V-uXb"/>
+                            <constraint firstItem="lJ6-jL-VRh" firstAttribute="top" secondItem="NoJ-Mh-xey" secondAttribute="bottom" constant="10" id="M0B-t7-LVl"/>
+                            <constraint firstItem="lJ6-jL-VRh" firstAttribute="leading" secondItem="Vgp-fv-0e0" secondAttribute="leading" constant="15" id="MHX-HF-fYE"/>
+                            <constraint firstAttribute="centerY" secondItem="rpe-Xp-rB8" secondAttribute="centerY" id="QMz-m9-LUU"/>
+                            <constraint firstItem="B6n-Rl-25k" firstAttribute="leading" secondItem="Vgp-fv-0e0" secondAttribute="leading" constant="15" id="SRL-iZ-JXj"/>
+                            <constraint firstItem="6mh-H5-Jrh" firstAttribute="leading" secondItem="Vgp-fv-0e0" secondAttribute="leading" constant="15" id="ZAt-Ex-0vj"/>
+                            <constraint firstItem="B6n-Rl-25k" firstAttribute="top" secondItem="lJ6-jL-VRh" secondAttribute="bottom" constant="10" id="gS1-7c-84v"/>
+                            <constraint firstItem="NoJ-Mh-xey" firstAttribute="top" secondItem="Vgp-fv-0e0" secondAttribute="top" constant="15" id="h6z-gc-svc"/>
+                            <constraint firstItem="6mh-H5-Jrh" firstAttribute="top" secondItem="B6n-Rl-25k" secondAttribute="bottom" constant="10" id="iUo-OF-JXT"/>
+                            <constraint firstAttribute="trailing" secondItem="rpe-Xp-rB8" secondAttribute="trailing" constant="15" id="lm1-2S-fS5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vgp-fv-0e0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="5Hr-SA-Ohl"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Vgp-fv-0e0" secondAttribute="bottom" constant="-9" id="Y8F-sS-y5u"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Vgp-fv-0e0" secondAttribute="trailing" constant="-8" id="bAY-rN-6TY"/>
+                    <constraint firstItem="Vgp-fv-0e0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="pMX-gd-I4j"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="constraint_bottom_Title4" destination="Dre-4V-uXb" id="Qnq-IT-uHD"/>
+                <outlet property="constraint_height_ContentView" destination="7pC-ez-WJ7" id="ppo-k7-6Zo"/>
+                <outlet property="constraint_height_LabelTitle1" destination="ifZ-1I-EhD" id="Yri-eg-xto"/>
+                <outlet property="constraint_height_LabelTitle2" destination="us1-IM-TGK" id="kt5-EU-EiN"/>
+                <outlet property="constraint_height_LabelTitle3" destination="f2H-ve-1aE" id="gtQ-70-Ab0"/>
+                <outlet property="constraint_height_LabelTitle4" destination="3CT-pS-sp3" id="ePi-13-Oel"/>
+                <outlet property="constraint_height_LabelTitle5" destination="Zd6-X5-gfy" id="UAp-md-eHN"/>
+                <outlet property="constraint_top_Title1" destination="h6z-gc-svc" id="cs8-88-jNw"/>
+                <outlet property="constraint_top_Title2" destination="M0B-t7-LVl" id="rsg-ej-aGH"/>
+                <outlet property="constraint_top_Title3" destination="gS1-7c-84v" id="qyf-1v-bdV"/>
+                <outlet property="constraint_top_Title4" destination="iUo-OF-JXT" id="iVf-7H-OqA"/>
+                <outlet property="constraint_width_Title1" destination="yR6-Uk-b65" id="kMJ-PJ-RjL"/>
+                <outlet property="constraint_width_Title2" destination="Npm-ys-At6" id="nlb-pm-yox"/>
+                <outlet property="constraint_width_Title3" destination="pQm-9G-0Aa" id="PtW-E9-Qg9"/>
+                <outlet property="constraint_width_Title4" destination="Eqc-zc-4cH" id="kHx-CL-olB"/>
+                <outlet property="constraint_width_Title5" destination="BQT-v7-qPH" id="ztt-iu-Uuy"/>
+                <outlet property="label_Title1" destination="NoJ-Mh-xey" id="OHy-XM-fuM"/>
+                <outlet property="label_Title2" destination="lJ6-jL-VRh" id="D0a-d9-nfS"/>
+                <outlet property="label_Title3" destination="B6n-Rl-25k" id="qtV-N2-r8r"/>
+                <outlet property="label_Title4" destination="6mh-H5-Jrh" id="TdQ-V3-tuE"/>
+                <outlet property="label_Title5" destination="rpe-Xp-rB8" id="Kc9-pW-P92"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="226"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,61 @@
+{
+    "COMMON":
+    {
+        "SERVER_API_VERSION":"3.3.1",
+        "CLIENT_VERSION":"6.5.16"
+    },
+    "DEBUG":
+    {
+        "SERVER":"http://192.168.0.201:8321/",
+        "NET_STATUS_DETECT_HOST":"www.baidu.com",
+        "TIME_OUT_INTERVAL":"30",
+        "HEADER_FIELDS" :
+        {
+            "Content-Type" : "application/json;charset=utf-8",
+            "Accept-Encoding" : "GZip,Deflate"
+        },
+        "DEBUG":"true"
+    }
+    ,
+    "RELEASE":
+    {
+        "SERVER":"http://service.inkey.com/",
+        "NET_STATUS_DETECT_HOST":"www.baidu.com",
+        "TIME_OUT_INTERVAL":"30",
+        "HEADER_FIELDS" :
+        {
+            "Content-Type" : "application/json;charset=utf-8",
+            "Accept-Encoding" : "GZip,Deflate"
+        }
+    }
+    ,
+    "INDOOR_RELEASE":
+    {
+        "SERVER":"http://service.four.inkey.com/",
+        "NET_STATUS_DETECT_HOST":"www.baidu.com",
+        "TIME_OUT_INTERVAL":"30",
+        "HEADER_FIELDS" :
+        {
+            "Content-Type" : "application/json;charset=utf-8",
+            "Accept-Encoding" : "GZip,Deflate"
+        },
+        "DEBUG":"true"
+    },
+    "UI":
+    {
+        "DEFAULT_NAVIGATION_BAR_IMAGE":"defaultNavigationBackground",
+        "DEFAULT_NET_IMAGE_PLACE_HOLDER":"#watchAdvert",
+        "DEFAULT_NET_IMAGE_PLACE_HOLDER_HASTEXT":"#businessDetailLogo"
+    },
+    "IMAGE_OPTION":
+    [
+        {
+            "name":"CULL",
+            "option":"1c"
+        },
+        {
+            "name":"SHORT_COMPATIBLE",
+            "option":"1e"
+        }
+    ]
+}

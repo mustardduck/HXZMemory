@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SellerDiscountDetail">
+            <connections>
+                <outlet property="buttonContinuePublish" destination="ahP-Yg-2e5" id="9Eb-dv-Yd9"/>
+                <outlet property="layoutConstraintPublishView" destination="ACy-36-vV1" id="OYm-Jf-MBi"/>
+                <outlet property="tableView" destination="qMs-l8-Lwg" id="0hV-JB-uZm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qMs-l8-Lwg">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="540"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hBM-8X-zsZ"/>
+                        <outlet property="delegate" destination="-1" id="KRo-uN-JtV"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3WQ-v7-wTx">
+                    <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwg-BY-XDL">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                            <color key="backgroundColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="Wfk-SL-LiY"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahP-Yg-2e5">
+                            <rect key="frame" x="15" y="8" width="570" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="V3W-dL-faE"/>
+                            </constraints>
+                            <state key="normal" title="继续发布" backgroundImage="ads_invate.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonClickContinuePublish:" destination="-1" eventType="touchUpInside" id="S9J-QA-arV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="lwg-BY-XDL" secondAttribute="trailing" id="02q-Qq-TV9"/>
+                        <constraint firstItem="ahP-Yg-2e5" firstAttribute="top" secondItem="3WQ-v7-wTx" secondAttribute="top" constant="8" id="46A-yv-vYE"/>
+                        <constraint firstAttribute="height" constant="60" id="ACy-36-vV1"/>
+                        <constraint firstAttribute="bottom" secondItem="ahP-Yg-2e5" secondAttribute="bottom" constant="12" id="YrA-MM-HpY"/>
+                        <constraint firstItem="ahP-Yg-2e5" firstAttribute="leading" secondItem="3WQ-v7-wTx" secondAttribute="leading" constant="15" id="h6B-8O-zCD"/>
+                        <constraint firstItem="lwg-BY-XDL" firstAttribute="top" secondItem="3WQ-v7-wTx" secondAttribute="top" id="mL4-Km-b5s"/>
+                        <constraint firstItem="lwg-BY-XDL" firstAttribute="leading" secondItem="3WQ-v7-wTx" secondAttribute="leading" id="v4c-th-Imc"/>
+                        <constraint firstAttribute="trailing" secondItem="ahP-Yg-2e5" secondAttribute="trailing" constant="15" id="y4M-sn-19R"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3WQ-v7-wTx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4b4-U7-5jk"/>
+                <constraint firstAttribute="trailing" secondItem="3WQ-v7-wTx" secondAttribute="trailing" id="CpR-yX-NYn"/>
+                <constraint firstAttribute="bottom" secondItem="3WQ-v7-wTx" secondAttribute="bottom" id="Cqb-OW-f58"/>
+                <constraint firstAttribute="trailing" secondItem="qMs-l8-Lwg" secondAttribute="trailing" id="PP0-wH-gMc"/>
+                <constraint firstItem="3WQ-v7-wTx" firstAttribute="top" secondItem="qMs-l8-Lwg" secondAttribute="bottom" id="SBg-S5-Rh9"/>
+                <constraint firstItem="qMs-l8-Lwg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cve-qJ-JEJ"/>
+                <constraint firstItem="qMs-l8-Lwg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zlV-Xx-slY"/>
+            </constraints>
+            <point key="canvasLocation" x="293" y="277"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ads_invate.png" width="120" height="40"/>
+    </resources>
+</document>

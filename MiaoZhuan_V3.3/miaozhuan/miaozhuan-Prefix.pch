@@ -1,0 +1,80 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#import "LibDotC.h"
+
+#define APP_DELEGATE ((AppDelegate*)[[UIApplication sharedApplication] delegate])
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "RuntimeNames.h"
+#import "UserNames.h"
+#import "PersistNames.h"
+#import "DictionaryWrapper+Net.h"
+#import "UICommon.h"
+#import "AppDelegate.h"
+#import "AppDelegate+Setup.h"
+#import "AdverModuleAPI.h"
+#import "LoginModuleAPI.h"
+#import "AdsModuleApi.h"
+#import "RCAdvertModuleAPI.h"
+#import "RCButton.h"
+#import "CRHttpAddedManager.h"
+#import "MTA.h"
+#import "MTAConfig.h"
+#import "CRMTAManager.h"
+#import "FastMacro.h"
+#endif
+
+#define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+
+#define RGBCOLORFLOAT(rgbValue) \
+[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define RGBAColor(r,g,b,a) \
+[UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+
+#define BoldFont(x) [UIFont boldSystemFontOfSize:x]
+#define Font(x) [UIFont systemFontOfSize:x]
+
+#define SCREENWIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREENHEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+#define curVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#define UserData_curUserId @""
+
+#define kServiceMobile @"400-019-3588"//客服电话
+
+#define W(obj)   (!obj?0:(obj).frame.size.width)
+#define H(obj)   (!obj?0:(obj).frame.size.height)
+#define X(obj)   (!obj?0:(obj).frame.origin.x)
+#define Y(obj)   (!obj?0:(obj).frame.origin.y)
+#define XW(obj) (X(obj)+W(obj))
+#define YH(obj) (Y(obj)+H(obj))
+#define BoldFont(x) [UIFont boldSystemFontOfSize:x]
+#define Font(x) [UIFont systemFontOfSize:x]
+
+#define S2N(x) [NSNumber numberWithInt:[x intValue]]
+#define I2N(x) [NSNumber numberWithInt:x]
+#define F2N(x) [NSNumber numberWithFloat:x]
+
+#define OBJECT_NEW_STRONG(_class, _initor)  STRONG_OBJECT(_class, _initor)
+#define OBJECT_NEW_WEAK(_class, _initor)    WEAK_OBJECT(_class, _initor)
+
+#define CRTestMode          if(0)
+#define CRTestMode_close    if(1)
+#define CRGetValueStrong(_target,_value)    _target = _value;[_target retain]
+#define CRGetValue(_target,_value)          _target = _value;

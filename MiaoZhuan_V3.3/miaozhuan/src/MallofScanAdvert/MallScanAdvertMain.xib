@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MallScanAdvertMain">
+            <connections>
+                <outlet property="btnType" destination="2dG-gb-YFo" id="70q-Pg-CVg"/>
+                <outlet property="controllerBar" destination="eZ7-my-Kr7" id="A9O-ag-Hen"/>
+                <outlet property="search_titleView" destination="jid-TY-Ovd" id="JFx-6N-t1X"/>
+                <outlet property="tabBtn" destination="CgX-8E-aY6" id="Bcf-EW-2RB"/>
+                <outlet property="txtSearchKey" destination="U90-nt-FS5" id="TgU-0o-yxC"/>
+                <outlet property="view" destination="zZH-8m-zEw" id="Moo-86-zfP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zZH-8m-zEw">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="474" y="367"/>
+        </view>
+        <view opaque="NO" contentMode="scaleToFill" id="eZ7-my-Kr7" userLabel="controllerBar">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CgX-8E-aY6">
+                    <rect key="frame" x="0.0" y="0.0" width="107" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <inset key="titleEdgeInsets" minX="-20" minY="28" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="25" minY="6" maxX="0.0" maxY="22"/>
+                    <state key="normal" title="购物" image="crs_004.png">
+                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" image="crs_004hover.png">
+                        <color key="titleColor" red="0.94117647059999998" green="0.019607843140000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="swapPage:" destination="-1" eventType="touchUpInside" id="fn0-l5-ZUG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VEX-t0-fvb">
+                    <rect key="frame" x="107" y="0.0" width="109" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <inset key="titleEdgeInsets" minX="-20" minY="28" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="25" minY="6" maxX="0.0" maxY="22"/>
+                    <state key="normal" title="搜索" image="crs_005.png">
+                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="crs_005hover.png">
+                        <color key="titleColor" red="0.94117647059999998" green="0.019607843140000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="swapPage:" destination="-1" eventType="touchUpInside" id="JQ7-Cy-Qe6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eIA-BJ-3vr">
+                    <rect key="frame" x="216" y="2" width="104" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <inset key="titleEdgeInsets" minX="-22" minY="30" maxX="0.0" maxY="1"/>
+                    <inset key="imageEdgeInsets" minX="40" minY="4" maxX="0.0" maxY="17"/>
+                    <state key="normal" title="我的商城" image="crs_006.png">
+                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" title="我的商城" image="crs_006hover.png">
+                        <color key="titleColor" red="0.94117647059999998" green="0.019607843140000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="swapPage:" destination="-1" eventType="touchUpInside" id="ueT-pI-67M"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="03P-E1-LKu" customClass="RRLineView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="580" y="620"/>
+        </view>
+        <view contentMode="scaleToFill" id="jid-TY-Ovd">
+            <rect key="frame" x="0.0" y="0.0" width="245" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2dG-gb-YFo">
+                    <rect key="frame" x="8" y="0.0" width="52" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="商品" image="ads_list_down.png">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="typeClicked:" destination="-1" eventType="touchUpInside" id="yda-2f-DyQ"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" id="U90-nt-FS5">
+                    <rect key="frame" x="60" y="0.0" width="183" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="807.5" y="310"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ads_list_down.png" width="9" height="6"/>
+        <image name="crs_004.png" width="23" height="23"/>
+        <image name="crs_004hover.png" width="23" height="23"/>
+        <image name="crs_005.png" width="23" height="23"/>
+        <image name="crs_005hover.png" width="23" height="23"/>
+        <image name="crs_006.png" width="23" height="23"/>
+        <image name="crs_006hover.png" width="23" height="23"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AE982BCC-802D-40DB-85DC-6FC0260862FD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>miaozhuan</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>c58d8b8b-febd-dc4b-bf4b-366a6a79d2e9++4321</key>
+		<string>http://192.168.0.160:8001/svn/iOS_mz/branches/MiaoZhuan_V3.3</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>miaozhuan.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>c58d8b8b-febd-dc4b-bf4b-366a6a79d2e9++4321</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>c58d8b8b-febd-dc4b-bf4b-366a6a79d2e9++4321</key>
+		<string>http://192.168.0.160:8001/svn/iOS_mz</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://192.168.0.160:8001/svn/iOS_mz/branches/MiaoZhuan_V3.3/miaozhuan.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>c58d8b8b-febd-dc4b-bf4b-366a6a79d2e9++4321</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>c58d8b8b-febd-dc4b-bf4b-366a6a79d2e9++4321</string>
+			<key>IDESourceControlWCCName</key>
+			<string>miaozhuanv3.3</string>
+		</dict>
+	</array>
+</dict>
+</plist>
